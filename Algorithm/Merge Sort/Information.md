@@ -1,14 +1,13 @@
 RECURRENCE RELATION: $T(n) = 2T\left( \frac{n}{2} \right)+o(n)$
 
-TIME COMPLEXITY: $O(n\log n)$
+TIME COMPLEXITY: $O(n\log n)$ <br/>
+--> list of size $n$ is always divided into a max of $log n$ parts and merging all sublist takes time <br /> Best case = worst case = average case
 
-Recursive algorithm to sort a data set.
+Algorithm based on DIVIDE and CONQUER to sort an array. <br/>
+Will divide the array in 2 parts at each iteration until reaching the base case (1 element per array) <br/>
+Once base case is reached, it will compare every subarray starting from bottom and sort them.
 
-DIVIDE AND CONQUER type of algorithm.
+<img src="https://www.programiz.com/sites/tutorial2program/files/merge-sort-example_0.png" alt="alt text" width="500" height="350">
 
-DIVIDE: 
 
-Takes an array, RECURSIVELY divides it into multiple sub-arrays until reaching the base case.
-
-Base Case: 1 element per array.
-
+    
