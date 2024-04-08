@@ -1,4 +1,5 @@
 RECURRENCE RELATION: $T(n) = 2T\left( \frac{n}{2} \right)+o(n)$
+
 TIME COMPLEXITY: $O(n\log n)$
 
 Recursive algorithm to sort a data set.
