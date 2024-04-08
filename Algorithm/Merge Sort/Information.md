@@ -55,7 +55,9 @@ Merge
             
     
 
-<img src="https://www.programiz.com/sites/tutorial2program/files/merge-sort-example_0.png" alt="alt text" width="500" height="350">
+<div style="text-align: center;">
+    <img src="https://www.programiz.com/sites/tutorial2program/files/merge-sort-example_0.png" alt="alt text" width="500" height="350">
+</div>
 
 
     
