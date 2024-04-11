@@ -6,15 +6,15 @@ Third: n-3 <br/>
 Last: 1 <br/>
 You decrease the reached element by 1 at each iteration because last element after an iteration is always sorted.
 
-$\underline{TIME \ COMPLEXITY}$ <br/>
-Worst Case: $O(n^2)$ <br/>
-Happens when trying to sort in ascending order but list is in descneding order. <br/>
-Best Case: $\Omega(n)$ <br/>
-Happens when input array is already sorted<br/>
-Average Case: $\Theta(n^2)$ <br/>
-Happens when elements in array are in no particular order <br/>
+$\underline{TIME \ COMPLEXITY}$ <br/> <br/>
+WORST CASE: $O(n^2)$ <br/>
+Happens when trying to sort in ascending order but list is in descneding order. <br/> <br/>
+BEST CASE: $\Omega(n)$ <br/>
+Happens when input array is already sorted<br/> <br/>
+AVERGAGE CASE: $\Theta(n^2)$ <br/>
+Happens when elements in array are in no particular order <br/> <br/>
 
-$\underline{SPACE \ COMPLEXITY}$ <br/>
+$\underline{SPACE \ COMPLEXITY}$ <br/> <br/>
 $O(n)$
 
 Bubble Sort
