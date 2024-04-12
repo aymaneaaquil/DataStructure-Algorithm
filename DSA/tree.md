@@ -12,14 +12,66 @@ $\underline{Terminology}$ <br/>
 11. Height --> Starting at 0 with root, number of edges in the DIRECT PATH until the wanted node
 12. Forest --> Collection of tree
 
+$\underline{Tree \ Performance}$ <br/>
+| Operation                     | Complexity |
+|-------------------------------|------------|
+| size, isEmpty                 | O(1)       |
+| iterator, positions           | O(n)       |
+| replace()                     | O(1)       |
+| root, parent                  | O(1)       |
+| Children(v)                   | O($C_{v}$) <br/> where $C_{v}$ is the number of children at node C   |
+| isInternal, isExternal,isRoot | O(1)       |
+
+# $\underline{Traversals}$ <br/>
+## Preorder <br/>
+* root is visited first as children are traversed  --> Node is visited before its descendent <br/>
+~~~~
+Algorithm preOrder(v)
+  visit(v)
+  for each child w of v
+   preOrder(w)
+~~~~
+## PostOrder <br/>
+* Node is visited after its descendants 
+~~~~
+Algorithm postOrder(v)
+  for each child w of v
+    postOrder(w)
+  visit(v)
+~~~~
+
 
 $\underline{Binary\ Tree}$ <br/>
 
 Definition: Tree with a maximum of 2 children. (Children = {0,1,2}) <br/>
 Height vs Nodes <br/>
--If you are given heigth h: <br/>
-min nodes: $n=h+1$ <br/>
-max nodes: $n=2^{h+1}-1$ <br/>
+Height of binary tree: $log_{2}(n+1)-1\leq h\leq n-1$ <br/>
+Numbers of node in binary tree: $h+1\leq n\leq 2^{h+1}-1$ <br/>
+
+# $\underline{Traversals}$ <br/>
+## InOrder <br/>
+* Node is visited after its left subtree and before its right subtree <br/>
+~~~~
+Algorithm inOrder(v)
+  if hasLeft(v)
+    inOrder(left(v))
+  visit(v)
+  if hasRight(v)
+    inOrder(right(v))
+~~~~
+
+$\underline{Binary\ Tree \ Performance\ (LinkedList)}$ <br/>
+| Operation                     | Complexity |
+|-------------------------------|------------|
+| size, isEmpty                 | O(1)       |
+| iterator, positions           | O(n)       |
+| replace()                     | O(1)       |
+| root, parent, left, right, siblings,children                  | O(1)       |
+| Children(v)                   | O(1)   |
+| hasLeft, hasRight, isInternal, isExternal,isRoot, remove, insertLeft, insertRight, attach | O(1)       |
+
+
+
 
 
 
