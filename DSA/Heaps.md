@@ -15,7 +15,38 @@ When node we wantt to change is at the bottom, apply upHeap. <br/>
 
 When node we want to change is a the top, apply downHeap. <br/>
 
-Insertion: <br/>
+## Insertion: <br/>
+
+1. find insertion node z (new last node).
+2. store k at z.
+3. restore heap order (up heap).
+
+### Up Heap
+* UpHeap restore the heap property by swapping k on an upward path.
+* Ends when k reach root OR parent has a key smaller than or equal to k
+* Runs in $O(logn)$ since heap has height of $O(logn)$
+
+## Deletion (removeMin()): <br/>
+
+1. return root entry
+2. Swap root with last node w.
+3. remove w.
+4. restore heap order (down heap). 
+
+### Down Heap
+
+* DownHeap restore the heap property by swaping k on a downward path.
+* End when k reach a leaf node OR a node whose children have keys greaten than or equal to k.
+* Runs in $O(logn)$ since heap has height of $O(logn)$
+
+# $\underline{Binary\ Tree \ Performance\ (LinkedList)}$ <br/>
+| Operation                     | Complexity |
+|-------------------------------|------------|
+| size, isEmpty                 | $O(1)$       |
+| min()           | $O(n)$       |
+| insert()                    | $O(logn)$       |
+| removeMin()                 | $O(logn)$       |
+
 
 
 
