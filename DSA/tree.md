@@ -24,7 +24,7 @@ $\underline{Tree \ Performance}$ <br/>
 
 # $\underline{Traversals}$ <br/>
 ## Preorder <br/>
-* root is visited first as children are traversed  --> Node is visited before its descendent <br/>
+* root is visited first as children are traversed  --> Node is visited before its descendent (Root,Left,Right)<br/>
 ~~~~
 Algorithm preOrder(v)
   visit(v)
@@ -32,7 +32,7 @@ Algorithm preOrder(v)
    preOrder(w)
 ~~~~
 ## PostOrder <br/>
-* Node is visited after its descendants 
+* Node is visited after its descendants  (Left,Right,Root)
 ~~~~
 Algorithm postOrder(v)
   for each child w of v
@@ -50,7 +50,7 @@ Numbers of node in binary tree: $h+1\leq n\leq 2^{h+1}-1$ <br/>
 
 # $\underline{Traversals}$ <br/>
 ## InOrder <br/>
-* Node is visited after its left subtree and before its right subtree <br/>
+* Node is visited after its left subtree and before its right subtree (Left,Root,Right)<br/>
 ~~~~
 Algorithm inOrder(v)
   if hasLeft(v)
