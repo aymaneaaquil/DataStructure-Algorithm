@@ -1,3 +1,5 @@
+For a BST, the INORDER traversal will be in increasing order
+
 # $\underline{Binary\ Search\ Tree \ Performance\ (LinkedList)}$ <br/>
 | Operation                     | Complexity |
 |-------------------------------|------------|
