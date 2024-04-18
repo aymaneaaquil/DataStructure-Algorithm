@@ -7,3 +7,7 @@
 | insertEdge(v,w,o) |1 |1| 1 |
 | removeVertex(v) |m |deg(v)| $n^2$ |
 | removeEdge(e) |1 |1| 1 |
+
+
+Order (Number of vertices) = $|V|$ <br/>
+Size (Number of edges) = $|E|$
