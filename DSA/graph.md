@@ -25,3 +25,28 @@ Propertie (n: number of vertices and m: number of edges): <br/>
 | 1 | end vertex (leaf) |
 | 2n | even vertex |
 | 2n+1 | odd vertex |
+
+Eulerian path/cycles: path/cycle that visits all edges exactly once.(You can visit the vertices more than once) <br/>
+Hamiltonian path/cycles: path/cycle that visits all vertices exactly once. <br/>
+
+BFS vs DFS <br/>
+
+BFS: uses queue <br/>
+DFS: uses stack <br/>
+
+| Application     | DFS     |BFS|
+|--------|--------|--------|
+| Spanning forest,connected components,path,cycles | x |x|
+| Shortest path |  |x|
+| Biconnected components | x ||
+
+DFS: <br/>
+~~~
+ function DFS(G, v)
+    visit(v)
+      for w in G.neighbors(v) do
+        dfs(G,w)
+ ~~~
+
+
+
